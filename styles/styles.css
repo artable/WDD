@@ -1,0 +1,82 @@
+:root {
+    /* Define some names */
+    --primary-color: #474A2C   ;
+    --secondary-color: #636940 ;
+    --accent1-color: #59A96A;
+    --accent2-color: #9BDEAC;
+    --accent3-color: #B4E7CE;
+    --offwhite: #fcfbfb
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header {
+    background-color: var(--secondary-color);
+}
+body {
+    background-color: var(--offwhite);
+
+}
+footer {
+    background-color: var(--secondary-color);
+}
+footer a {
+    text-decoration: none;
+    color: var(--offwhite);
+}
+footer p {
+    font-size: 1.2em;
+}
+footer a:hover {
+    color: var(--accent3-color);
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--offwhite);
+}
+nav a:hover {
+    background-color: var(--accent3-color);
+    color: var(--primary-color)
+}
+.book, .join {
+    text-decoration: none;
+    background-color: var(--accent2-color);
+    color: var(--primary-color)
+
+}
+.book:hover, .join:hover {
+    background-color: var(--accent3-color);
+    color: var(--primary-color)
+}
+.msg {
+    background-color: var(--accent1-color);
+}
+.msg h2
+.home-title {
+    color: var(--primary-color);
+}
+.msg p {
+    color: var(--primary-color);
+}
+h4 {
+    color: var(--primary-color);
+}
+
+#hero-msg h1, hero-msg h4 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
+main section {
+    text-align: center;
+}
+#background {
+    height: 725px;
+}
