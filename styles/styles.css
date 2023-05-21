@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=EB+Garamond&family=Lora&display=swap');
 :root {
     /* Define some names */
     --primary-color: #474A2C   ;
@@ -5,7 +6,11 @@
     --accent1-color: #59A96A;
     --accent2-color: #9BDEAC;
     --accent3-color: #B4E7CE;
-    --offwhite: #fcfbfb
+    --offwhite: #fcfbfb;
+
+    --heading-font: Garamond, "Crimson Text", Lora;;
+    --paragraph-font: "Crimson Text", Lora, Garamond;  
+
 }
 
 #content {
@@ -17,10 +22,22 @@ header {
 }
 body {
     background-color: var(--offwhite);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 
+}
+main section img {
+    box-sizing: border-box;
+}
+h2 {
+    margin: 0;
 }
 footer {
     background-color: var(--secondary-color);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     text-decoration: none;
@@ -28,6 +45,9 @@ footer a {
 }
 footer p {
     font-size: 1.2em;
+}
+footer .social img {
+    padding-top: 15px;
 }
 footer a:hover {
     color: var(--accent3-color);
@@ -39,16 +59,20 @@ nav a {
     text-align: center;
     text-decoration: none;
     color: var(--offwhite);
+    padding: 35px;
 }
 nav a:hover {
     background-color: var(--accent3-color);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 .book, .join {
     text-decoration: none;
     background-color: var(--accent2-color);
-    color: var(--primary-color)
-
+    color: var(--primary-color);
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: var(--accent3-color);
@@ -56,19 +80,31 @@ nav a:hover {
 }
 .msg {
     background-color: var(--accent1-color);
+    line-height: 1.5em;
+    padding: 35px;
 }
-.msg h2
-.home-title {
+.msg h2 {
     color: var(--primary-color);
+    font-family: var(--heading-font);
 }
 .msg p {
     color: var(--primary-color);
+    font-size: .8em;
+    padding-bottom: 15px;
+
 }
+.home-title {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 h4 {
     color: var(--primary-color);
 }
 
-#hero-msg h1, hero-msg h4 {
+#hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
 .button-box {
@@ -79,4 +115,26 @@ main section {
 }
 #background {
     height: 725px;
+}
+.logo {
+    width: 80px;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+#hero-img {
+    width: 100%
+}
+
+#logo-link {
+    padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black; /*TODO check color*/
 }
