@@ -1,0 +1,62 @@
+:root {
+    /* Define some names */
+    --primary-color: #474A2C   ;
+    --secondary-color: #636940 ;
+    --accent1-color: #59A96A;
+    --accent2-color: #9BDEAC;
+    --accent3-color: #B4E7CE;
+    --offwhite: #fcfbfb;
+
+    --heading-font: Garamond, "Crimson Text", Lora;;
+    --paragraph-font: "Crimson Text", Lora, Garamond;  
+
+}
+#title {
+    text-align: center;
+    border-bottom: 6px solid var(--accent1-color);
+}
+.collapsibles .card img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.collapsible {
+    /* display: block; */
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 2em;
+    color: var(--offwhite);
+    border-color: red;
+    margin-top: -8px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.card {
+    position: relative;
+    margin-top: 10px;
+} 
+.title {
+    position: absolute;
+    color: var(--offwhite);
+    font-size: 2em;
+    top: -40px;
+    left: 8px;
+}
+#grand-canyon {
+    color: var(--primary-color);
+}
+.active, .collapsible:hover {
+    background-color: var(--secondary-color);
+}
+.collapsible-content {
+    display: none;
+    overflow: hidden;
+    margin-top: -8px;
+    background-color: var(--accent3-color);
+}
+.collapsible-content p {
+    margin-top: 0;
+}
+footer {
+    margin-top: 5px;
+}
