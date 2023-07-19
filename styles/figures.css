@@ -1,0 +1,189 @@
+/*margin: top right bottom left */
+/* margin: top l/r bottom */
+/* margin: top/bottom right/left */
+/* TODO */
+/* nice dividing lines for modern BOM? */
+
+/* REVERT/NORMALIZE */
+p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+}
+/* FONT STYLINGS */
+.min-english {
+    /* typesetting wisdom: 6pt */
+    /* 1.9mm ≈ 5.4pt */
+    font-size: 1.9mm;
+    word-break: break-all;
+}
+.min-chinese {
+    /* typesetting wisdom: 9pt */
+    /* 3.1mm ≈ 8.8pt */
+    font-size: 3.1mm; 
+}
+.engr-chinese {
+    font-size: 10mm;
+    line-height: 1;
+}
+/* RULERS AND REFERENCES */
+.top-rlr-p5mm {
+    position: absolute;
+    left: -.5mm; top: 0;
+    right: 0; height: 10mm;
+    background-color: rgba(0, 255, 255, 0.25);
+    border-left: .5mm solid black;
+}
+.left-rlr-p5mm {
+    position: absolute;
+    left: 0; top: -.5mm;
+    width: 10mm; bottom: 0; /*top,bottom:0 causes div to fill height*/
+    background-color: rgba(132, 100, 227, 0.25);
+    border-top: .5mm solid red;
+}
+
+/* THE PLATES GENERAL */
+.plate-width {
+    position: relative;
+    width: 6in; min-width: 6in;
+    /* background-color: goldenrod; */
+    border: 1mm solid goldenrod;
+}
+.plates {
+    position: relative;
+    width: 6in; height: 8in;
+    min-width: 6in;
+    text-align: center;
+    background-color: goldenrod;
+}
+.scrawled {
+    overflow: hidden;
+}
+.left {
+    position: absolute;
+    left: 1.5mm; top: 0mm;
+    bottom: 0;
+}
+.right {
+    position: absolute;
+    right: 1.5mm; top: 0mm;
+    bottom: 0; 
+}
+.perforations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.perforation {
+    display: inline-block;
+    width: .5in; height: .5in;
+    background-color:  black;
+    border-radius: 50%;
+}
+/* THE PLATES NICER */
+.beautifully {
+    padding: 1.5mm 1.5mm 1.5mm 15.7mm;
+}
+
+/* MODERN BOM STYLING */
+.modern-bom {
+    /* total width and height: 5.25 and 7in*/
+    position:relative;
+    width: 5.25in; height:auto;
+    min-width: 5.25in;
+    border: 1mm solid #122661
+}
+
+.bom-layout {
+    margin: 13mm 14mm 8mm;
+    display: grid;
+    grid-template-columns: 1fr .32mm 1fr;
+    grid-template-rows: auto .32mm auto;
+}
+.bom-layout .min-english {
+    margin-right: 2mm;
+}
+.bom-layout .min-chinese {
+    margin-left: 2mm;
+    padding-bottom: 2mm;
+}
+.bom-layout .footer {
+    font-size: smaller;
+
+    min-height: 10mm;
+    grid-column:  1/-1;
+    display: grid;
+    grid-template-columns: 1fr .18mm 1fr .18mm 1fr;
+    justify-content: space-between;
+}
+.metric {
+    padding: .6mm 2.5mm;
+    font-size: .7em;
+}
+.ref-right {
+    position: absolute;
+    right: 16mm;top: 7mm;
+    font-size: 3mm;
+}
+
+.vline {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.hline {
+    grid-column: 1/-1;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+/* CALIBRATION */
+#calibration {
+    text-align: center;
+    margin: 0 auto;
+    width: 8in;
+}
+#calibration > p {
+    margin-bottom: 10px;
+}
+.credit-card {
+    width: 3.375in; height: 2.125in;
+    background-color: lightblue;
+    border: 3px solid black;
+}
+
+/* GENERAL FORMATTING */
+
+.card {
+    margin-top: 1.5rem;
+}
+.card > div {
+    margin: 0 auto;
+}
+.card > h4 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+.large {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#examples {
+    min-width: 12.1in
+}
+.side-by-side {
+    margin: 0 auto;
+    min-width: 12.05in;
+    max-width: 12.05in;
+    display: flex;
+    /* gap: 3mm; */
+    height: 8in;
+    justify-content: space-between;
+}
